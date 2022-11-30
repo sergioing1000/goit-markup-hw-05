@@ -1,0 +1,97 @@
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 80px;
+    padding: 0 var(--container-padding);
+}
+.top-logo-nav-bar{
+    display: flex;
+    gap: 60px;
+    height: 80px;    
+}
+.top-logo{
+    align-self: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-1);
+}
+.nav-bar{
+    display: flex;
+    gap: 80px;    
+    align-self: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-2);
+}
+.nav-bar-studio a,
+.nav-bar-portfolio a,
+.nav-bar-contacts a
+{
+    text-decoration: none;
+    color: var(--brand-color-2);
+}
+
+.nav-bar-studio a:hover,
+.nav-bar-portfolio a:hover,
+.nav-bar-contacts a:hover,
+.nav-bar-studio a:focus,
+.nav-bar-portfolio a:focus,
+.nav-bar-contacts a:focus,
+.nav-bar a.current {
+    text-decoration: none;
+    color: var(--brand-color-1);
+    border: none;
+    outline: none;
+}
+
+.current:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--brand-color-1);
+    border-radius: 2px;
+    top: 20px;
+}
+
+.contact-data{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px ;
+    align-items: center;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-3);
+}
+
+.email-contact a,
+.phone-contact a{
+    text-decoration: none;
+    color: var(--brand-color-3);
+    fill: var(--brand-color-3);
+}
+
+.email-contact a:hover,
+.phone-contact a:hover,
+.email-contact a:focus,
+.phone-contact a:focus {
+    text-decoration: none;
+    color: var(--brand-color-1);
+    outline: none;
+    fill:var(--brand-color-1);
+    cursor: pointer;
+}
